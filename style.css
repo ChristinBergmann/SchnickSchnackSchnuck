@@ -1,6 +1,8 @@
 body {
   font-family: "Raleway", sans-serif;
   background-color: rgb(237, 237, 19);
+  margin: 0px;
+  padding: 20px;
 }
 
 header {
@@ -16,25 +18,52 @@ p {
 
 section {
   display: flex;
-  justify-content: center;
+  flex-direction: column;
+}
+
+section p {
+  align-self: center;
 }
 
 input {
   text-align: center;
+  align-self: center;
+  font-size: 20px;
+  color: rgb(255, 187, 0);
+  width: 250px;
+  height: 70px;
+  border-radius: 8%;
+  border-style: none;
 }
 
 button {
   display: flex;
   align-self: center;
+  margin-top: 25px;
+}
+button:hover {
+  color: rgb(240, 146, 6);
 }
 
 #answerBox {
   visibility: visible;
 
-  position: relative;
   display: flex;
   flex-direction: column;
   justify-content: center;
+  margin-top: 40px;
+}
+
+#answerBox h3 {
+  text-align: center;
+  padding: 0px 30px 0px 30px;
+}
+
+#answerBox h2 {
+  font-size: 28px;
+  text-align: center;
+  color: white;
+  text-shadow: -1px -2px rgb(206, 105, 11);
 }
 
 footer {
@@ -44,4 +73,7 @@ footer {
 }
 footer p {
   text-align: center;
+}
+hr {
+  width: 60%;
 }

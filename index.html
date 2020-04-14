@@ -2,14 +2,16 @@
 <html lang="en">
 
 <head>
-    <meta charset="utf-8">
+    <title>Rock-Scissors-Paper Game</title>
+    <meta name="description" content="A user versus computer game">
+    <meta name="keywords" content="game">
+    <meta name="robots" content="nofollow">
+    <meta http-equiv="author" content="Christin Bergmann">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width,initial-scale=1.0">
-    <title>Rock-Scissors-Paper Game</title>
+    <meta charset="utf-8">
     <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@100&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css" type="text/css">
-
-
 </head>
 
 <body>
@@ -23,15 +25,16 @@
         <section>
             <label for="user"></label>
             <input id="user" type="text" name="" placeholder="Type in your choice!" pattern="[a-zA-Z]">
+            <button id="playBtn" onclick="playGame()">PLAY</button>
+            <p>Results coming up...</p>
         </section>
-        <button id="playBtn" onclick="playGame()">PLAY</button>
 
         <br>
 
-        <p>Results coming up...</p>
         <div id="answerBox"></div>
     </main>
     <footer>
+        <hr>
         <p>Posted by: Christin || 2020</p>
     </footer>
 

@@ -5,16 +5,17 @@ const getUserChoice = userInput => {
 
     if (userInput === "rock" || userInput === "paper" || userInput === "scissors" || userInput === "bomb") {
         return userInput;
-    } else {
-        let errorMessage = document.createElement("p")
-        errorMessage.innerHTML = "You can only choose between: rock, paper or scissors !";
 
-        console.log("You can only choose between: rock, paper or scissors !");
+    } else {
+
+        alert("You can only choose between: rock, paper or scissors !")
+        // console.log("You can only choose between: rock, paper or scissors !");
     }
 }
 
 
 function getComputerChoice() {
+
     let randomNumber = Math.floor(Math.random() * 3);
     switch (randomNumber) {
         case 0:
@@ -27,6 +28,7 @@ function getComputerChoice() {
 }
 
 function determineWinner(userChoice, computerChoice) {
+
     if (userChoice === "bomb") {
         return "You secretly won !!!"
     }
@@ -35,28 +37,29 @@ function determineWinner(userChoice, computerChoice) {
     }
     if (userChoice === "rock") {
         if (computerChoice === "paper") {
-            return "You lost.. the computer did win !"
+            return "Oh oh.. YOU LOST.. the computer did win !"
         } else {
-            return "You won !!!"
+            return "Yipie Yayay... YOU WON !!!"
         }
     }
     if (userChoice === "paper") {
         if (computerChoice === "scissors") {
-            return "You lost.. the computer did win !"
+            return "Oh oh.. YOU LOST.. the computer did win !"
         } else {
-            return "You won !!!"
+            return "Yipie Yayay... YOU WON !!!"
         }
     }
     if (userChoice === "scissors") {
         if (computerChoice === "rock") {
-            return "You lost.. the computer did win !"
+            return "Oh oh.. YOU LOST.. the computer did win !"
         } else {
-            return "You won !!!"
+            return "Yipie Yayay... YOU WON !!!"
         }
     }
 }
 
 const playGame = () => {
+
     const userChoice = getUserChoice();
     const computerChoice = getComputerChoice();
 
@@ -69,18 +72,13 @@ const playGame = () => {
         let answerComputer = document.createElement("h3")
         let resultWinner = document.createElement("h2")
 
-        answerUser.innerHTML = "You threw: " + userChoice;
-        answerComputer.innerHTML = "The computer threw: " + computerChoice;
+        answerUser.innerHTML = "You threw: " + userChoice.toUpperCase();
+        answerComputer.innerHTML = "The computer threw: " + computerChoice.toUpperCase();
         resultWinner.innerHTML = determineWinner(userChoice, computerChoice);
-
 
         answerBox.appendChild(answerUser)
         answerBox.appendChild(answerComputer)
         answerBox.appendChild(resultWinner)
-
-        console.log("You threw: " + userChoice);
-        console.log("The computer threw: " + computerChoice);
-        console.log(determineWinner(userChoice, computerChoice));
 
         document.getElementById("answerBox").style.visibility = "visible";
 
