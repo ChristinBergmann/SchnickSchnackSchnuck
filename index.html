@@ -3,7 +3,6 @@
 
 <head>
     <title>Rock-Scissors-Paper Game</title>
-    <meta name="description" content="An user versus computer game">
     <meta name="keywords" content="game">
     <meta name="robots" content="nofollow">
     <meta http-equiv="author" content="Christin Bergmann">
@@ -12,6 +11,7 @@
     <meta charset="utf-8">
     <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@100&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css" type="text/css">
+    <link rel="manifest" href="manifest.webmanifest">
 </head>
 
 <body>
@@ -25,7 +25,7 @@
         <section>
             <label for="user"></label>
             <input id="user" type="text" name="" placeholder="Type in your choice!" pattern="[a-zA-Z]">
-            <button id="playBtn" onclick="playGame()">PLAY</button>
+            <button id="play-Btn" onclick="playGame()">PLAY</button>
             <p>Result is coming up below...</p>
         </section>
 
@@ -33,6 +33,7 @@
 
         <div id="answerBox"></div>
     </main>
+
     <footer>
         <hr>
         <p>Posted by: Christin || 2020</p>

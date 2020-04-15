@@ -1,4 +1,5 @@
 //_________Schnick Schnack Schnuck Spiel_________//
+// window.onload
 
 const getUserChoice = userInput => {
     userInput = document.getElementById("user").value.toLowerCase();
@@ -60,11 +61,14 @@ function determineWinner(userChoice, computerChoice) {
 
 const playGame = () => {
 
+    registerSW();
+
     const userChoice = getUserChoice();
     const computerChoice = getComputerChoice();
 
 
     if (userChoice) {
+
         document.getElementById("answerBox")
         answerBox.innerHTML = "";
 
@@ -86,5 +90,17 @@ const playGame = () => {
 
         document.getElementById("answerBox").style.visibility = "hidden";
     }
+    document.getElementById("user").value = "";
 }
-playGame();
+
+async function registerSW() {
+    if ('serviceWorker' in navigator) {
+        try {
+            await navigator.serviceWorker.register('sw.js', {
+                scope: '.'
+            });
+        } catch (e) {
+            console.log("SW registration failed");
+        }
+    }
+}

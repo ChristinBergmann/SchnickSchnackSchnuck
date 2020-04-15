@@ -1,0 +1,11 @@
+{
+    "name": "Rock-Scissors-Paper Game",
+    "start_url": ".",
+    "display": "standalone",
+    "description": "An user versus computer game",
+    "icons": [{
+        "src": "images/icon-lamp.png",
+        "sizes": "240x240",
+        "type": "image/png"
+    }]
+}
