@@ -1,7 +1,8 @@
-body {
+body,
+html {
   font-family: "Raleway", sans-serif;
   background-color: rgb(237, 237, 19);
-  margin: 10px;
+  margin: 20px;
   padding: 20px;
 }
 
@@ -13,7 +14,7 @@ header {
 }
 
 p {
-  padding: 20px 50px 20px 50px;
+  padding: 20px 50px;
 }
 
 section {
@@ -51,19 +52,22 @@ button:hover {
   display: flex;
   flex-direction: column;
   justify-content: center;
+  border-style: dashed;
+  color: red;
   margin-top: 40px;
+  padding: 2em;
 }
 
 #answerBox h3 {
   text-align: center;
-  padding: 0px 30px 0px 30px;
+  padding: 0px 30px;
 }
 
 #answerBox h2 {
   font-size: 28px;
   text-align: center;
   color: white;
-  text-shadow: -1px -2px rgb(206, 105, 11);
+  text-shadow: -2px -3px rgb(226, 59, 8);
 }
 
 footer {
