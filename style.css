@@ -45,6 +45,9 @@ button {
 button:hover {
   color: rgb(240, 146, 6);
 }
+button a {
+  text-decoration: none;
+}
 
 #answerBox {
   visibility: visible;
