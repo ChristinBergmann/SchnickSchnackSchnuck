@@ -8,12 +8,13 @@ html {
 
 header {
   display: flex;
-  justify-content: center;
+  justify-content: space-evenly;
+  text-align: center;
   margin-bottom: 5%;
 }
 
 p {
-  padding: 20px 50px;
+  padding: 20px 40px;
 }
 
 section {
@@ -85,11 +86,10 @@ hr {
 }
 
 /*media query for Iphone 6,7,8*7*/
-@media only screen and (min-device-width: 375px) {
+X @media only screen and (min-device-width: 375px) {
   body {
     padding: 10px;
   }
-
   h1,
   p {
     font-size: 1em;
@@ -99,3 +99,10 @@ hr {
     margin-top: 0;
   }
 }
+
+/* @media only screen and (min-device-width: 414px) {
+  h1,
+  p {
+    font-size: 1.3em;
+  }
+} */
