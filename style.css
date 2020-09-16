@@ -13,6 +13,11 @@ header {
   margin-bottom: 5%;
 }
 
+header h1,
+p {
+  font-size: 1.7em;
+}
+
 p {
   padding: 20px 40px;
 }
@@ -85,8 +90,8 @@ hr {
   width: 60%;
 }
 
-/*media query for Iphone 6,7,8*7*/
-X @media only screen and (min-device-width: 375px) {
+/*media query for Iphone 6,7,8*/
+@media only screen and (min-device-width: 375px) {
   body {
     padding: 10px;
   }
@@ -100,9 +105,9 @@ X @media only screen and (min-device-width: 375px) {
   }
 }
 
-/* @media only screen and (min-device-width: 414px) {
+@media only screen and (min-device-width: 414px) {
   h1,
   p {
     font-size: 1.3em;
   }
-} */
+}
