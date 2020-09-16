@@ -1,5 +1,12 @@
 //_________Schnick Schnack Schnuck Spiel_________//
 // window.onload
+// window.addEventListener("keydown", (event) => {
+//   console.log(event.key);
+//   if (event.key === "enter") {
+//     event.preventDefault;
+//     getUserChoice();
+//   }
+// });
 
 const getUserChoice = (userInput) => {
   userInput = document.getElementById("user").value.toLowerCase();
