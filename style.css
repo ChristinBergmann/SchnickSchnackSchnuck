@@ -2,15 +2,14 @@ body,
 html {
   font-family: "Raleway", sans-serif;
   background-color: rgb(237, 237, 19);
-  margin: 20px;
+  margin: 0;
   padding: 20px;
 }
 
 header {
   display: flex;
   justify-content: center;
-  margin-top: 10%;
-  margin-bottom: 10%;
+  margin-bottom: 5%;
 }
 
 p {
