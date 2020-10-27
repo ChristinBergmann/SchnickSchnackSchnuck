@@ -10,6 +10,17 @@
 //   }
 // });
 
+// target.onkeydown = functionRef;
+
+// const input = document.querySelector('input');
+// const log = document.getElementById('user');
+
+// input.onkeydown = logKey;
+
+// function logKey(e) {
+//   log.textContent += ` ${e.code}`;
+// }
+
 const getUserChoice = (userInput) => {
   userInput = document.getElementById("user").value.toLowerCase();
 

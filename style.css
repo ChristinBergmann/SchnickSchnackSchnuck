@@ -38,7 +38,8 @@ input {
   color: rgb(255, 187, 0);
   width: 250px;
   height: 70px;
-  border-radius: 8%;
+  border-top-left-radius: 15px;
+  border-bottom-right-radius: 15px;
   border-style: none;
 }
 
@@ -55,15 +56,28 @@ button a {
 }
 
 #answerBox {
-  visibility: visible;
+  visibility: hidden;
 
   display: flex;
   flex-direction: column;
   justify-content: center;
-  border-style: dashed;
-  color: red;
+  color: rgb(236, 72, 72);
   margin-top: 40px;
   padding: 2em;
+  border: dashed 3px red;
+  animation: flash_border 2s ease-in infinite;
+}
+
+@keyframes flash_border {
+  0% {
+    border-color: red;
+  }
+  50% {
+    border-color: black;
+  }
+  100% {
+    border-color: red;
+  }
 }
 
 #answerBox h3 {
