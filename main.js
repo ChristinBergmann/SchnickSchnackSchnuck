@@ -1,26 +1,5 @@
 //_________Schnick Schnack Schnuck Spiel_________//
 
-// window.onload
-
-// window.addEventListener("keydown", (event) => {
-//   console.log(event.key);
-//   if (event.key === "enter") {
-//     event.preventDefault;
-//     getUserChoice();
-//   }
-// });
-
-// target.onkeydown = functionRef;
-
-// const input = document.querySelector('input');
-// const log = document.getElementById('user');
-
-// input.onkeydown = logKey;
-
-// function logKey(e) {
-//   log.textContent += ` ${e.code}`;
-// }
-
 const getUserChoice = (userInput) => {
   userInput = document.getElementById("user").value.toLowerCase();
 
@@ -35,6 +14,21 @@ const getUserChoice = (userInput) => {
     alert("You can only choose between: rock, paper or scissors !");
   }
 };
+
+function handleKeyPress(e) {
+  let playButton = document.getElementById("play-Btn");
+
+  e = e || window.event;
+  if (e.keyCode === 13) {
+    playButton.click();
+    return false;
+  }
+}
+
+let playerInput;
+playerInput = document.getElementById("user");
+playerInput.onkeypress = handleKeyPress;
+
 
 function getComputerChoice() {
   let randomNumber = Math.floor(Math.random() * 3);
