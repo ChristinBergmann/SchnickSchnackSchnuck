@@ -80,8 +80,8 @@ function determineWinner(userChoice, computerChoice) {
 const playGame = () => {
   registerSW();
 
-  const userChoice = getUserChoice();
-  const computerChoice = getComputerChoice();
+  let userChoice = getUserChoice();
+  let computerChoice = getComputerChoice();
 
   if (userChoice) {
     document.getElementById("answerBox");
