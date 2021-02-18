@@ -26,7 +26,7 @@ function handleKeyPress(e) {
 }
 
 let playerInput;
-playerInput = document.getElementById("user").value.toLowerCase();
+playerInput = document.getElementById("user");
 playerInput.onkeypress = handleKeyPress;
 
 function getComputerChoice() {
