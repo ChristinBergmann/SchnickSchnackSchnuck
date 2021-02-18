@@ -26,9 +26,8 @@ function handleKeyPress(e) {
 }
 
 let playerInput;
-playerInput = document.getElementById("user");
+playerInput = document.getElementById("user").value.toLowerCase();
 playerInput.onkeypress = handleKeyPress;
-
 
 function getComputerChoice() {
   let randomNumber = Math.floor(Math.random() * 3);
